@@ -52,12 +52,3 @@ module sigDelay(
    assign sigOut = delayReg[delayVal];
 endmodule // sigDelay
 
-module fu_adder(input x, input y, input cin, 
-					 output sum, output cout);
-
-	assign sum = (x^y^cin);
-	assign cout = ((x&y) | (cin&(x^y));
-	
-endmodule
-
-//testing
