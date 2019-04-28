@@ -29,6 +29,14 @@ module Lab2_140L (
  output wire [7:0] L2_led
 );
 
+assign c[7:0] <= 0;
+
+if (Gl_subtract) begin
+	Gl_r2 <= ~Gl_r2;
+	fb_adder fb_adder1 (Gl_r1, Gl_r2, 1, L2_adder_data, c);
+end else
+	fb_adder fb_adder2 (Gl_r1, Gl_r2, 0, L2_adder_data, c);
+
 endmodule
 
 module sigDelay(
@@ -55,9 +63,19 @@ endmodule // sigDelay
 module fu_adder(input x, input y, input cin, 
 					 output sum, output cout);
 
-	assign sum = (x^y^cin);
-	assign cout = ((x&y) | (cin&(x^y));
+	assign sum <= (x^y^cin);
+	assign cout <= ((x&y) | (cin&(x^y));
 	
+endmodule
+
+
+module fb_adder(input a[7:0], input b[7:0], input cin, input sum [7:0], input c[7:0]);
+
+fu_adder fu_adder1 (a[0], b[0], cin, sum[0], c[0]);
+fu_adder fu_adder2 (a[1], b[1], c[0], sum[0], c[1]);
+fu_adder fu_adder3 (a[2], b[2], c[1], sum[0], c[2]);
+fu_adder fu_adder4 (a[3], b[3], c[2], sum[0], c[0]);
+
 endmodule
 
 //testing
