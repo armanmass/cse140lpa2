@@ -45,9 +45,9 @@ module Lab2_140L (
 		
 	end
 
+	sigDelay sigDelay (.sigOut(L2_adder_rdy), .sigIn(Gl_adder_start), .clk(clk), .rst(Gl_rst));
 
-
-	fb_adder fb_adder1 (num1, num2, cin, L2_adder_data);
+	fb_adder fb_adder (num1, num2, cin, L2_adder_data);
 
 endmodule
 
@@ -72,28 +72,26 @@ module sigDelay(
    assign sigOut = delayReg[delayVal];
 endmodule // sigDelay
 
-module fu_adder(input x, input y, input cin, 
-					 output sum, output cout);
-always @(posedge clk) begin
-	sum <= (x^y^cin);
-	cout <= ((x&y) | (cin&(x^y)));
-end 
-endmodule
+module fu_adder(input a, input b, input cin, 
+					 output reg sum, output reg cout);
+always @(*) begin
+	sum <= ((a^b)^cin);
+	cout <= ((a&b) | (cin&(a^b)));
+end
+endmodule //fulladder
 
 
-module fb_adder(input a[7:0], input b[7:0], input cin, output sum [7:0]);
+module fb_adder(input [7:0] a, input [7:0] b, input cin, output reg [7:0] sum);
 
 reg [7:0] cout;
 
-fu_adder fu_adder1 (a[0], b[0], cin, sum[0], cout[0]);
-fu_adder fu_adder2 (a[1], b[1], cout[0], sum[1], cout[1]);
-fu_adder fu_adder3 (a[2], b[2], cout[1], sum[2], cout[2]);
-fu_adder fu_adder4 (a[3], b[3], cout[2], sum[3], cout[3]);
+fu_adder fu_adder1 (.a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(cout[0]));
+fu_adder fu_adder2 (.a(a[1]), .b(b[1]), .cin(cout[0]), .sum(sum[1]), .cout(cout[1]));
+fu_adder fu_adder3 (.a(a[2]), .b(b[2]), .cin(cout[1]), .sum(sum[2]), .cout(cout[2]));
+fu_adder fu_adder4 (.a(a[3]), .b(b[3]), .cin(cout[2]), .sum(sum[3]), .cout(cout[3]));
 
-always @(posedge clk) begin
+always @(cout) begin
 	sum[4] <= cout[3];
 end
 
-endmodule
-
-//testing
+endmodule //4bit adder

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_140L
-Mon Apr 29 18:44:35 2019
+Mon Apr 29 20:50:35 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Messages
 
 
 
@@ -36,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Apr 29 18:44:35 2019           ;
+; Analysis & Synthesis Status ; Failed - Mon Apr 29 20:50:35 2019           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Lab2_140L                                   ;
 ; Top-level Entity Name       ; Lab2_140L                                   ;
@@ -126,13 +127,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; Lab2_140L.v                      ; yes             ; User Verilog HDL File  ; D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Apr 29 18:44:01 2019
+    Info: Processing started: Mon Apr 29 20:50:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_140L -c Lab2_140L
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20029): Only one processor detected - disabling parallel compilation
@@ -160,16 +170,17 @@ Info (12021): Found 5 design units, including 5 entities, in source file buart.v
     Info (12023): Found entity 3: uart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 89
     Info (12023): Found entity 4: rxuart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 130
     Info (12023): Found entity 5: buart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 197
-Error (10773): Verilog HDL error at Lab2_140L.v(84): declaring module ports or function arguments with unpacked array types requires SystemVerilog extensions File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 84
-Error (10161): Verilog HDL error at Lab2_140L.v(77): object "clk" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 77
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(78): object "sum" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 78
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(79): object "cout" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 79
-Error (10161): Verilog HDL error at Lab2_140L.v(93): object "clk" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 93
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(94): object "sum" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 94
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
-    Error: Peak virtual memory: 544 megabytes
-    Error: Processing ended: Mon Apr 29 18:44:36 2019
-    Error: Elapsed time: 00:00:35
-    Error: Total CPU time (on all processors): 00:00:41
+Info (12127): Elaborating entity "Lab2_140L" for the top level hierarchy
+Warning (10034): Output port "L2_led" at Lab2_140L.v(30) has no driver File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+Info (12128): Elaborating entity "sigDelay" for hierarchy "sigDelay:sigDelay" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 48
+Info (12128): Elaborating entity "fb_adder" for hierarchy "fb_adder:fb_adder" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 50
+Error (10663): Verilog HDL Port Connection error at Lab2_140L.v(88): output or inout port "sum" must be connected to a structural net expression File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 88
+Error (10663): Verilog HDL Port Connection error at Lab2_140L.v(88): output or inout port "cout" must be connected to a structural net expression File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 88
+Error (12152): Can't elaborate user hierarchy "fb_adder:fb_adder" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 50
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+    Error: Peak virtual memory: 547 megabytes
+    Error: Processing ended: Mon Apr 29 20:50:36 2019
+    Error: Elapsed time: 00:00:32
+    Error: Total CPU time (on all processors): 00:00:39
 
 
