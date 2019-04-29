@@ -28,19 +28,29 @@ module Lab2_140L (
  output wire L2_adder_rdy          , //pulse
  output wire [7:0] L2_led
 );
-   assign c[7:0] = 0;
-	assign cin = 0;
-
-always @(posedge clk) begin
-
-	if (Gl_subtract == 1) begin
-		Gl_r2 <= ~Gl_r2;
-		cin <= 1;
-	end
+	reg c[7:0];
+	reg cin = 0;
+	reg i;
 	
-end
 
-fb_adder fb_adder1 (Gl_r1, Gl_r2, 0, L2_adder_data, c);
+	always @(posedge clk) begin
+
+		if (Gl_subtract) begin
+			for(i = 0; i < 8; i = i + 1) begin
+				Gl_r2[i] <= ~Gl_r2[i];
+			end
+			cin <= 1;
+		end
+		
+		for(i = 0; i < 8; i = i + 1) begin
+			c[i] <= 0;
+		end
+		
+	end
+
+
+
+	fb_adder fb_adder1 (Gl_r1, Gl_r2, cin, L2_adder_data, c);
 
 endmodule
 
