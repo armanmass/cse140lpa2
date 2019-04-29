@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_140L
-Mon Apr 29 05:23:46 2019
+Mon Apr 29 18:44:35 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Apr 29 05:23:46 2019           ;
+; Analysis & Synthesis Status ; Failed - Mon Apr 29 18:44:35 2019           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Lab2_140L                                   ;
 ; Top-level Entity Name       ; Lab2_140L                                   ;
@@ -132,7 +132,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Apr 29 05:23:14 2019
+    Info: Processing started: Mon Apr 29 18:44:01 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_140L -c Lab2_140L
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20029): Only one processor detected - disabling parallel compilation
@@ -147,9 +147,9 @@ Info (12021): Found 4 design units, including 4 entities, in source file lattice
     Info (12023): Found entity 4: latticehx1k File: D:/PhotonUser/My Files/Home Folder/Lab2/latticehx1k.v Line: 342
 Info (12021): Found 4 design units, including 4 entities, in source file lab2_140l.v
     Info (12023): Found entity 1: Lab2_140L File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 20
-    Info (12023): Found entity 2: sigDelay File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 57
-    Info (12023): Found entity 3: fu_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 78
-    Info (12023): Found entity 4: fb_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 87
+    Info (12023): Found entity 2: sigDelay File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 54
+    Info (12023): Found entity 3: fu_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 75
+    Info (12023): Found entity 4: fb_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file fake_pll.v
     Info (12023): Found entity 1: fake_pll File: D:/PhotonUser/My Files/Home Folder/Lab2/fake_pll.v Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file fake_buart.v
@@ -160,17 +160,16 @@ Info (12021): Found 5 design units, including 5 entities, in source file buart.v
     Info (12023): Found entity 3: uart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 89
     Info (12023): Found entity 4: rxuart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 130
     Info (12023): Found entity 5: buart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 197
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(40): object "Gl_r2" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 40
-Error (10231): Verilog HDL error at Lab2_140L.v(40): value cannot be assigned to input "Gl_r2" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 40
-Error (10773): Verilog HDL error at Lab2_140L.v(87): declaring module ports or function arguments with unpacked array types requires SystemVerilog extensions File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 87
-Error (10161): Verilog HDL error at Lab2_140L.v(80): object "clk" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 80
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(81): object "sum" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 81
-Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(82): object "cout" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 82
-Error (10044): Verilog HDL error at Lab2_140L.v(53): expression cannot reference entire array "c" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 53
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 1 warning
+Error (10773): Verilog HDL error at Lab2_140L.v(84): declaring module ports or function arguments with unpacked array types requires SystemVerilog extensions File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 84
+Error (10161): Verilog HDL error at Lab2_140L.v(77): object "clk" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 77
+Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(78): object "sum" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 78
+Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(79): object "cout" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 79
+Error (10161): Verilog HDL error at Lab2_140L.v(93): object "clk" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 93
+Error (10137): Verilog HDL Procedural Assignment error at Lab2_140L.v(94): object "sum" on left-hand side of assignment must have a variable data type File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 94
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
     Error: Peak virtual memory: 544 megabytes
-    Error: Processing ended: Mon Apr 29 05:23:47 2019
-    Error: Elapsed time: 00:00:33
+    Error: Processing ended: Mon Apr 29 18:44:36 2019
+    Error: Elapsed time: 00:00:35
     Error: Total CPU time (on all processors): 00:00:41
 
 

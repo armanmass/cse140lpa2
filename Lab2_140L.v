@@ -28,29 +28,26 @@ module Lab2_140L (
  output wire L2_adder_rdy          , //pulse
  output wire [7:0] L2_led
 );
-	reg c[7:0];
-	reg cin = 0;
-	reg i;
+
+	reg [7:0] num1;
+	reg [7:0] num2;
+	reg cin;
 	
 
 	always @(posedge clk) begin
-
+		cin <= 0;
+		num1 <= Gl_r1;
+		num2 <= Gl_r2;
 		if (Gl_subtract) begin
-			for(i = 0; i < 8; i = i + 1) begin
-				Gl_r2[i] <= ~Gl_r2[i];
-			end
+			num2 <= ~num2;
 			cin <= 1;
-		end
-		
-		for(i = 0; i < 8; i = i + 1) begin
-			c[i] <= 0;
 		end
 		
 	end
 
 
 
-	fb_adder fb_adder1 (Gl_r1, Gl_r2, cin, L2_adder_data, c);
+	fb_adder fb_adder1 (num1, num2, cin, L2_adder_data);
 
 endmodule
 
@@ -84,12 +81,18 @@ end
 endmodule
 
 
-module fb_adder(input a[7:0], input b[7:0], input cin, input sum [7:0], input cout[7:0]);
+module fb_adder(input a[7:0], input b[7:0], input cin, output sum [7:0]);
+
+reg [7:0] cout;
 
 fu_adder fu_adder1 (a[0], b[0], cin, sum[0], cout[0]);
 fu_adder fu_adder2 (a[1], b[1], cout[0], sum[1], cout[1]);
 fu_adder fu_adder3 (a[2], b[2], cout[1], sum[2], cout[2]);
 fu_adder fu_adder4 (a[3], b[3], cout[2], sum[3], cout[3]);
+
+always @(posedge clk) begin
+	sum[4] <= cout[3];
+end
 
 endmodule
 
