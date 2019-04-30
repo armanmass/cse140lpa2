@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_140L
-Mon Apr 29 20:50:35 2019
+Tue Apr 30 21:39:15 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,7 +11,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: sigDelay:sigDelay
+ 10. Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder4"
+ 11. Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder3"
+ 12. Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder2"
+ 13. Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder1"
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -37,11 +45,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Apr 29 20:50:35 2019           ;
+; Analysis & Synthesis Status ; Successful - Tue Apr 30 21:39:15 2019       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Lab2_140L                                   ;
 ; Top-level Entity Name       ; Lab2_140L                                   ;
 ; Family                      ; MAX V                                       ;
+; Total logic elements        ; 5                                           ;
+; Total pins                  ; 37                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
 
 
@@ -136,13 +148,120 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Total logic elements                        ; 5      ;
+;     -- Combinational with no register       ; 0      ;
+;     -- Register only                        ; 0      ;
+;     -- Combinational with a register        ; 5      ;
+;                                             ;        ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 0      ;
+;     -- 2 input functions                    ; 5      ;
+;     -- 1 input functions                    ; 0      ;
+;     -- 0 input functions                    ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 5      ;
+;     -- arithmetic mode                      ; 0      ;
+;     -- qfbk mode                            ; 0      ;
+;     -- register cascade mode                ; 0      ;
+;     -- synchronous clear/load mode          ; 0      ;
+;     -- asynchronous clear/load mode         ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 5      ;
+; I/O pins                                    ; 37     ;
+; Maximum fan-out node                        ; Gl_rst ;
+; Maximum fan-out                             ; 5      ;
+; Total fan-out                               ; 16     ;
+; Average fan-out                             ; 0.38   ;
++---------------------------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name          ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------+--------------+
+; |Lab2_140L                 ; 5 (0)       ; 5            ; 0          ; 37   ; 0            ; 0 (0)        ; 0 (0)             ; 5 (0)            ; 0 (0)           ; 0 (0)      ; |Lab2_140L                   ; Lab2_140L   ; work         ;
+;    |sigDelay:sigDelay|     ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |Lab2_140L|sigDelay:sigDelay ; sigDelay    ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 5     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sigDelay:sigDelay ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; delayVal       ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder4"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder3"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder2"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fb_adder:fb_adder1|fu_adder:fu_adder1"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Apr 29 20:50:04 2019
+    Info: Processing started: Tue Apr 30 21:38:38 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_140L -c Lab2_140L
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20029): Only one processor detected - disabling parallel compilation
@@ -157,9 +276,9 @@ Info (12021): Found 4 design units, including 4 entities, in source file lattice
     Info (12023): Found entity 4: latticehx1k File: D:/PhotonUser/My Files/Home Folder/Lab2/latticehx1k.v Line: 342
 Info (12021): Found 4 design units, including 4 entities, in source file lab2_140l.v
     Info (12023): Found entity 1: Lab2_140L File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 20
-    Info (12023): Found entity 2: sigDelay File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 54
-    Info (12023): Found entity 3: fu_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 75
-    Info (12023): Found entity 4: fb_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 84
+    Info (12023): Found entity 2: sigDelay File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 55
+    Info (12023): Found entity 3: fu_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 76
+    Info (12023): Found entity 4: fb_adder File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 85
 Info (12021): Found 1 design units, including 1 entities, in source file fake_pll.v
     Info (12023): Found entity 1: fake_pll File: D:/PhotonUser/My Files/Home Folder/Lab2/fake_pll.v Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file fake_buart.v
@@ -171,16 +290,53 @@ Info (12021): Found 5 design units, including 5 entities, in source file buart.v
     Info (12023): Found entity 4: rxuart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 130
     Info (12023): Found entity 5: buart File: D:/PhotonUser/My Files/Home Folder/Lab2/buart.v Line: 197
 Info (12127): Elaborating entity "Lab2_140L" for the top level hierarchy
-Warning (10034): Output port "L2_led" at Lab2_140L.v(30) has no driver File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
-Info (12128): Elaborating entity "sigDelay" for hierarchy "sigDelay:sigDelay" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 48
-Info (12128): Elaborating entity "fb_adder" for hierarchy "fb_adder:fb_adder" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 50
-Error (10663): Verilog HDL Port Connection error at Lab2_140L.v(88): output or inout port "sum" must be connected to a structural net expression File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 88
-Error (10663): Verilog HDL Port Connection error at Lab2_140L.v(88): output or inout port "cout" must be connected to a structural net expression File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 88
-Error (12152): Can't elaborate user hierarchy "fb_adder:fb_adder" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 50
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
-    Error: Peak virtual memory: 547 megabytes
-    Error: Processing ended: Mon Apr 29 20:50:36 2019
-    Error: Elapsed time: 00:00:32
-    Error: Total CPU time (on all processors): 00:00:39
+Info (12128): Elaborating entity "sigDelay" for hierarchy "sigDelay:sigDelay" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 32
+Info (12128): Elaborating entity "fb_adder" for hierarchy "fb_adder:fb_adder1" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 51
+Warning (10034): Output port "ans" at Lab2_140L.v(85) has no driver File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 85
+Info (12128): Elaborating entity "fu_adder" for hierarchy "fb_adder:fb_adder1|fu_adder:fu_adder1" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 88
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "L2_adder_data[0]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[1]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[2]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[3]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[4]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[5]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[6]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_adder_data[7]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 27
+    Warning (13410): Pin "L2_led[0]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[1]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[2]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[3]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[4]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[5]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[6]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+    Warning (13410): Pin "L2_led[7]" is stuck at GND File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 30
+Warning (21074): Design contains 17 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Gl_subtract" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 24
+    Warning (15610): No output dependent on input pin "Gl_r1[0]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[1]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[2]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[3]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[4]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[5]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[6]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r1[7]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 25
+    Warning (15610): No output dependent on input pin "Gl_r2[0]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[1]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[2]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[3]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[4]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[5]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[6]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+    Warning (15610): No output dependent on input pin "Gl_r2[7]" File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v Line: 26
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 5 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 556 megabytes
+    Info: Processing ended: Tue Apr 30 21:39:15 2019
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:40
 
 
