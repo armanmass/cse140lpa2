@@ -1,5 +1,5 @@
 Flow report for Lab2_140L
-Tue Apr 30 21:39:15 2019
+Wed May 01 03:14:14 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Tue Apr 30 21:39:15 2019       ;
+; Flow Status           ; Successful - Wed May 01 03:14:14 2019       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; Lab2_140L                                   ;
 ; Top-level Entity Name ; Lab2_140L                                   ;
 ; Family                ; MAX V                                       ;
 ; Device                ; 5M2210ZF324I5                               ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 5                                           ;
+; Total logic elements  ; 20                                          ;
 ; Total pins            ; 37                                          ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/30/2019 21:38:40 ;
+; Start date & time ; 05/01/2019 03:13:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2_140L           ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 +--------------------------+-------------------------------+---------------+-------------+----------------+
 ; Assignment Name          ; Value                         ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID    ; 7463097345114.155666031904532 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID    ; 7463097345114.155668041901200 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT   ; Verilog Hdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL      ; ModelSim-Altera (Verilog)     ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE           ; 1 ps                          ; --            ; --          ; eda_simulation ;
@@ -85,7 +85,7 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 556 MB              ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 557 MB              ; 00:00:40                           ;
 ; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
