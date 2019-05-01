@@ -1,21 +1,13 @@
-// --------------------------------------------------------------------
-// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
-// --------------------------------------------------------------------
-// Copyright (c) 2019 by UCSD CSE 140L
-// --------------------------------------------------------------------
 //
-// Permission:
+// Lab2_140L
+// CSE140L Spring 2019
 //
-//   This code for use in UCSD CSE 140L.
-//   It is synthesisable for Lattice iCEstick 40HX.  
+// Author: Arman Massoudian
 //
-// Disclaimer:
+
 //
-//   This Verilog source code is intended as a design reference
-//   which illustrates how these types of functions can be implemented.
-//   It is the user's responsibility to verify their design for
-//   consistency and functionality through the use of formal
-//   verification methods.  
+// Module Lab2_140L
+// Four bit adder subtractor using submodule fu_adder (Full adder)
 //
 module Lab2_140L (
  input wire Gl_rst,                  // reset signal (active high)
@@ -31,48 +23,41 @@ module Lab2_140L (
 
 	sigDelay sigDelay (.sigOut(L2_adder_rdy), .sigIn(Gl_adder_start), .clk(clk), .rst(Gl_rst));
 
-	reg [7:0] num1;
-	reg [7:0] num2;
-	reg [7:0] cout;
-	wire [7:0] sum;
-	reg cin;
+	wire [7:0] num2;
+	wire [3:0] cout;
+	
+	//negating second number if Gl_subtract is active (bitwise)
+	assign num2[0] = (Gl_subtract) ? ~Gl_r2[0] : Gl_r2[0];
+	assign num2[1] = (Gl_subtract) ? ~Gl_r2[1] : Gl_r2[1];
+	assign num2[2] = (Gl_subtract) ? ~Gl_r2[2] : Gl_r2[2];
+	assign num2[3] = (Gl_subtract) ? ~Gl_r2[3] : Gl_r2[3];
+	assign num2[4] = (Gl_subtract) ? ~Gl_r2[4] : Gl_r2[4];
+	assign num2[5] = (Gl_subtract) ? ~Gl_r2[5] : Gl_r2[5];
+	assign num2[6] = (Gl_subtract) ? ~Gl_r2[6] : Gl_r2[6];
+	assign num2[7] = (Gl_subtract) ? ~Gl_r2[7] : Gl_r2[7];
+	
+	//using full adders to ripple creating four bit adder
+	fu_adder fu_adder1 (.a(Gl_r1[0]), .b(num2[0]), .cin(Gl_subtract), .sum(L2_adder_data[0]), .cout(cout[0]));
+	fu_adder fu_adder2 (.a(Gl_r1[1]), .b(num2[1]), .cin(cout[0]), .sum(L2_adder_data[1]), .cout(cout[1]));
+	fu_adder fu_adder3 (.a(Gl_r1[2]), .b(num2[2]), .cin(cout[1]), .sum(L2_adder_data[2]), .cout(cout[2]));
+	fu_adder fu_adder4 (.a(Gl_r1[3]), .b(num2[3]), .cin(cout[2]), .sum(L2_adder_data[3]), .cout(cout[3]));
 
-	always @(posedge clk) begin
-		num1 <= Gl_r1;
-		num2 <= Gl_r2;
-		if (Gl_subtract) begin
-			num2 <= ~num2;
-		end
-	end
-
-
-	fb_adder fb_adder1 (.a(num1), .b(num2), .cin(Gl_substract), .cout(c), .sum(sum), .ans(L2_led));
+	//set sum bits for character display
+	assign L2_adder_data[7] = 1'b0;
+	assign L2_adder_data[6] = L2_led[4];
+	assign L2_adder_data[5] = ~L2_led[4];
+	assign L2_adder_data[4] = 1'b1;
+	assign L2_led[3:0] = L2_adder_data[3:0];
 	
-	reg [7:0] char;
-	integer i;
-	
-	always @(*) begin
-	
-		for(i = 0; i < 4; i = i + 1) begin
-			char[i] = L2_led[i];
-		end
-		
-		char[7] = 1'b0;
-		char[4] = 1'b0;
-		
-		if(L2_led[4]) begin
-			char[6] = 1'b1;
-			char[5] = 1'b0;
-		end else begin
-			char[6] = 1'b0;
-			char[5] = 1'b1;
-		end
-	
-	end
-	
-	assign L2_adder_data = char;
+	//appropriate carry bit for led for subtracting/adding
+	assign L2_led[4] = (Gl_subtract && (Gl_r2 > Gl_r1)) ? 1'b1 
+						  : (Gl_subtract && (Gl_r2 <= Gl_r1)) ? 1'b0
+						  : cout[3];
 
 endmodule
+
+
+
 
 module sigDelay(
 		  output      sigOut,
@@ -95,34 +80,16 @@ module sigDelay(
    assign sigOut = delayReg[delayVal];
 endmodule // sigDelay
 
+
+//
+// Module fu_adder
+// Full adder taking 3 inputs value 1, value 2, and carry in
+// returns sum and carry out x=a+b+c then sum = x[0] and cout = x[1]
+//
 module fu_adder(input a, input b, input cin, 
 					 output reg sum, output reg cout);
 	always @(*) begin			 
 	sum = ((a^b)^cin);
-	cout = ((a&b) | (cin&(a^b)));
+	cout = ((a&b) | (cin&a) | (cin&b));
 	end 
 endmodule //fulladder
-
-
-module fb_adder(input [7:0] a, input [7:0] b, input cin, input [7:0] cout, output [7:0] sum, output reg [7:0] ans);
-
-wire cout1, cout2, cout3, cout4;
-
-fu_adder fu_adder1 (.a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(cout1));
-fu_adder fu_adder2 (.a(a[1]), .b(b[1]), .cin(cout1), .sum(sum[1]), .cout(cout2));
-fu_adder fu_adder3 (.a(a[2]), .b(b[2]), .cin(cout2), .sum(sum[2]), .cout(cout3));
-fu_adder fu_adder4 (.a(a[3]), .b(b[3]), .cin(cout3), .sum(sum[3]), .cout(cout4));
-
-always @(*) begin
-	ans[0] = sum[0];
-	ans[1] = sum[1];
-	ans[2] = sum[2];
-	ans[3] = sum[3];
-	ans[4] = cout4;
-	ans[5] = 1'b0;
-	ans[6] = 1'b0;
-	ans[7] = 1'b0;
-end
-
-
-endmodule //4bit adder

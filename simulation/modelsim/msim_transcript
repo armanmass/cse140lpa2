@@ -16,21 +16,20 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/PhotonUser/My\ Files/Home\ Folder/Lab2 {D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:16 on May 01,2019
+# Start time: 08:20:11 on May 01,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PhotonUser/My Files/Home Folder/Lab2" D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v 
 # -- Compiling module Lab2_140L
 # -- Compiling module sigDelay
 # -- Compiling module fu_adder
-# -- Compiling module fb_adder
 # 
 # Top level modules:
 # 	Lab2_140L
-# End time: 03:17:18 on May 01,2019, Elapsed time: 0:00:02
+# End time: 08:20:12 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/buart.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:29 on May 01,2019
+# Start time: 08:23:30 on May 01,2019
 # vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/Lab2/buart.v 
 # -- Compiling module baudgen
 # -- Compiling module baudgen2
@@ -40,44 +39,43 @@ vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/bua
 # 
 # Top level modules:
 # 	buart
-# End time: 03:17:31 on May 01,2019, Elapsed time: 0:00:02
+# End time: 08:23:31 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/fake_buart.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:31 on May 01,2019
+# Start time: 08:23:31 on May 01,2019
 # vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/Lab2/fake_buart.v 
 # -- Compiling module fake_buart
 # 
 # Top level modules:
 # 	fake_buart
-# End time: 03:17:32 on May 01,2019, Elapsed time: 0:00:01
+# End time: 08:23:32 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/fake_pll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:32 on May 01,2019
+# Start time: 08:23:32 on May 01,2019
 # vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/Lab2/fake_pll.v 
 # -- Compiling module fake_pll
 # 
 # Top level modules:
 # 	fake_pll
-# End time: 03:17:33 on May 01,2019, Elapsed time: 0:00:01
+# End time: 08:23:33 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:33 on May 01,2019
+# Start time: 08:23:33 on May 01,2019
 # vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v 
 # -- Compiling module Lab2_140L
 # -- Compiling module sigDelay
 # -- Compiling module fu_adder
-# -- Compiling module fb_adder
 # 
 # Top level modules:
 # 	Lab2_140L
-# End time: 03:17:34 on May 01,2019, Elapsed time: 0:00:01
+# End time: 08:23:34 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/latticehx1k.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:34 on May 01,2019
+# Start time: 08:23:34 on May 01,2019
 # vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/Lab2/latticehx1k.v 
 # -- Compiling module decodeKeys
 # -- Compiling module gl_fsm
@@ -86,31 +84,31 @@ vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/lat
 # 
 # Top level modules:
 # 	latticehx1k
-# End time: 03:17:36 on May 01,2019, Elapsed time: 0:00:02
+# End time: 08:23:35 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/tb_sft.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:36 on May 01,2019
+# Start time: 08:23:36 on May 01,2019
 # vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/Lab2/tb_sft.v 
 # -- Compiling module tb_sft
 # 
 # Top level modules:
 # 	tb_sft
-# End time: 03:17:37 on May 01,2019, Elapsed time: 0:00:01
+# End time: 08:23:36 on May 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/Lab2/top_sft.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:17:37 on May 01,2019
+# Start time: 08:23:36 on May 01,2019
 # vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/Lab2/top_sft.v 
 # -- Compiling module top_sft
 # 
 # Top level modules:
 # 	top_sft
-# End time: 03:17:37 on May 01,2019, Elapsed time: 0:00:00
+# End time: 08:23:37 on May 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.top_sft
 # vsim work.top_sft 
-# Start time: 03:17:46 on May 01,2019
+# Start time: 08:23:42 on May 01,2019
 # Loading work.top_sft
 # Loading work.latticehx1k
 # Loading work.fake_pll
@@ -120,10 +118,2218 @@ vsim work.top_sft
 # Loading work.gl_fsm
 # Loading work.Lab2_140L
 # Loading work.sigDelay
-# Loading work.fb_adder
 # Loading work.fu_adder
 # Loading work.tb_sft
-# ** Warning: (vsim-3015) D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v(49): [PCDPC] - Port size (8) does not match connection size (1) for port 'cout'. The port definition is at: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v(107).
-#    Time: 0 ps  Iteration: 0  Instance: /top_sft/latticehx1k/Lab_UT/fb_adder1 File: D:/PhotonUser/My Files/Home Folder/Lab2/Lab2_140L.v
-# End time: 03:22:31 on May 01,2019, Elapsed time: 0:04:45
-# Errors: 0, Warnings: 1
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# fail : 0 + 4 0x04  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# fail : 9 + 7 0x10  == leds zzzzz
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/Lab2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/Lab2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:07 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 08:28:09 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:09 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 08:28:10 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:11 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 08:28:11 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:11 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# ** Error: D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v(39): (vlog-2730) Undefined variable: 'i'.
+# ** Error (suppressible): D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v(59): (vlog-2388) 'i' already declared in this scope (Lab2_140L).
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# End time: 08:28:12 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:12 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 08:28:14 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:14 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 08:28:16 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:28:16 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 08:28:16 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 08:28:22 on May 01,2019, Elapsed time: 0:04:40
+# Errors: 1, Warnings: 0
+# vsim work.top_sft 
+# Start time: 08:28:22 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# fail : 0 + 4 0x04  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds zzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# fail : 9 + 7 0x10  == leds zzzzz
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:22 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 08:38:26 on May 01,2019, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:26 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 08:38:28 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:28 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 08:38:29 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:29 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 08:38:30 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:30 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 08:38:32 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:32 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 08:38:32 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:38:32 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 08:38:33 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 08:38:52 on May 01,2019, Elapsed time: 0:10:30
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 08:38:52 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:55:51 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 08:55:53 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:55:54 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 08:55:55 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:55:55 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 08:55:56 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:55:56 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 08:55:57 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:55:58 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 08:56:00 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:56:00 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 08:56:01 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:56:01 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 08:56:02 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 08:57:36 on May 01,2019, Elapsed time: 0:18:44
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 08:57:36 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:09:59 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 09:10:02 on May 01,2019, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:02 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 09:10:03 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:03 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 09:10:04 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:04 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:10:06 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:06 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 09:10:07 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:07 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 09:10:08 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:10:08 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 09:10:09 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 09:10:37 on May 01,2019, Elapsed time: 0:13:01
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:10:37 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -all
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:01 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 09:27:04 on May 01,2019, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:04 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 09:27:05 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:05 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 09:27:06 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:06 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:27:07 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:07 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 09:27:08 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:09 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 09:27:09 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:27:09 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 09:27:10 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 09:27:19 on May 01,2019, Elapsed time: 0:16:42
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:27:19 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 0 + 4 0x04  == 0
+# fail : 0 + 4 0x04  == leds 0xxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == 
+# fail : 5 - 2 0x03  == leds xxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == 
+# fail : 2 - 3 0x1f  == leds xxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 + 7 0x10  == 
+# fail : 9 + 7 0x10  == leds xxxxx
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:20 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 09:30:22 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:22 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 09:30:24 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:26 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 09:30:28 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:28 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:30:30 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:30 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 09:30:32 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:32 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 09:30:33 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:33 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 09:30:34 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.top_sft
+# End time: 09:30:53 on May 01,2019, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:30:53 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 0 + 4 0x04  == 0
+# fail : 0 + 4 0x04  == leds 0xxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == 
+# fail : 5 - 2 0x03  == leds xxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == 
+# fail : 2 - 3 0x1f  == leds xxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 + 7 0x10  == 
+# fail : 9 + 7 0x10  == leds xxxxx
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:32 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 09:36:33 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:34 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 09:36:34 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:34 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 09:36:35 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:35 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:36:36 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:36 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 09:36:38 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:39 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 09:36:39 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:40 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 09:36:40 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 09:36:51 on May 01,2019, Elapsed time: 0:05:58
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:36:51 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/top_sft/*
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:52:52 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:52:54 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 09:52:56 on May 01,2019, Elapsed time: 0:16:05
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:52:56 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:58:05 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 09:58:07 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 09:58:13 on May 01,2019, Elapsed time: 0:05:17
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 09:58:13 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 5 - 2 0x03 != 3
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 2 - 3 0x1f != _
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 + 7 0x10  == 0
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:03:29 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:03:31 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:03:39 on May 01,2019, Elapsed time: 0:05:26
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:03:39 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 5 - 2 0x03 != 3
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 2 - 3 0x1f != _
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 + 7 0x10  == 0
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:09:10 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:09:16 on May 01,2019, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:09:20 on May 01,2019, Elapsed time: 0:05:41
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:09:20 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:11:32 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:11:33 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:11:45 on May 01,2019, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:11:45 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:14:57 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:15:01 on May 01,2019, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:15:05 on May 01,2019, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:15:05 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:26:10 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:26:13 on May 01,2019, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:26:28 on May 01,2019, Elapsed time: 0:11:23
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:26:28 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:31:56 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 10:31:57 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 10:32:01 on May 01,2019, Elapsed time: 0:05:33
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 10:32:01 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:07:20 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 11:07:22 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 11:07:24 on May 01,2019, Elapsed time: 0:35:23
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 11:07:24 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(212)
+#    Time: 4040 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# 1
+# Break in Module tb_sft at D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v line 212
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:08 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/buart.v 
+# -- Compiling module baudgen
+# -- Compiling module baudgen2
+# -- Compiling module uart
+# -- Compiling module rxuart
+# -- Compiling module buart
+# 
+# Top level modules:
+# 	buart
+# End time: 11:22:10 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:10 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_buart.v 
+# -- Compiling module fake_buart
+# 
+# Top level modules:
+# 	fake_buart
+# End time: 11:22:11 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:11 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/fake_pll.v 
+# -- Compiling module fake_pll
+# 
+# Top level modules:
+# 	fake_pll
+# End time: 11:22:12 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:12 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 11:22:13 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:13 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/latticehx1k.v 
+# -- Compiling module decodeKeys
+# -- Compiling module gl_fsm
+# -- Compiling module Glue_Lab2
+# -- Compiling module latticehx1k
+# 
+# Top level modules:
+# 	latticehx1k
+# End time: 11:22:15 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:15 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v 
+# -- Compiling module tb_sft
+# 
+# Top level modules:
+# 	tb_sft
+# End time: 11:22:16 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 30 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:22:16 on May 01,2019
+# vlog -reportprogress 30 -work work D:/PhotonUser/My Files/Home Folder/LAB2/top_sft.v 
+# -- Compiling module top_sft
+# 
+# Top level modules:
+# 	top_sft
+# End time: 11:22:17 on May 01,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 11:22:48 on May 01,2019, Elapsed time: 0:15:24
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 11:22:49 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 2 - 3 0x1f == ?
+# fail : 2 - 3 0x1f  == leds 01111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 9 = 0x12 != R
+# pass : 9 + 9 = 0x12 != leds 10010
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 - 9 0x00 == P
+# fail : 9 - 9 0x00  == leds 10000
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:40:12 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 11:40:14 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 11:40:17 on May 01,2019, Elapsed time: 0:17:28
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 11:40:17 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 5 - 2 0x03 == S
+# fail : 5 - 2 0x03  == leds 10011
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 2 - 3 0x1f != _
+# pass : 2 - 3 = 0x1f != leds 11111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 9 = 0x12 != R
+# pass : 9 + 9 = 0x12 != leds 10010
+run
+run
+run
+run
+run
+run
+run
+run
+# fail : 9 - 9 0x00 == P
+# fail : 9 - 9 0x00  == leds 10000
+run
+run
+run
+vlog -reportprogress 300 -work work {D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:17 on May 01,2019
+# vlog -reportprogress 300 -work work D:/PhotonUser/My Files/Home Folder/LAB2/Lab2_140L.v 
+# -- Compiling module Lab2_140L
+# -- Compiling module sigDelay
+# -- Compiling module fu_adder
+# 
+# Top level modules:
+# 	Lab2_140L
+# End time: 11:59:19 on May 01,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim work.top_sft
+# End time: 11:59:22 on May 01,2019, Elapsed time: 0:19:05
+# Errors: 0, Warnings: 0
+# vsim work.top_sft 
+# Start time: 11:59:22 on May 01,2019
+# Loading work.top_sft
+# Loading work.latticehx1k
+# Loading work.fake_pll
+# Loading work.fake_buart
+# Loading work.Glue_Lab2
+# Loading work.decodeKeys
+# Loading work.gl_fsm
+# Loading work.Lab2_140L
+# Loading work.sigDelay
+# Loading work.fu_adder
+# Loading work.tb_sft
+add wave -position insertpoint sim:/top_sft/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 0 + 4 = 0x04 != 4
+# pass : 0 + 4 = 0x04 != leds 00100
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 5 - 2 0x03 != 3
+# pass : 5 - 2 = 0x03 != leds 00011
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 2 - 3 0x1f != _
+# pass : 2 - 3 = 0x1f != leds 11111
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 7 = 0x10 != P
+# pass : 9 + 7 = 0x10 != leds 10000
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 + 9 = 0x12 != R
+# pass : 9 + 9 = 0x12 != leds 10010
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : 9 - 9 0x00 != 0
+# pass : 9 - 9 = 0x00 != leds 00000
+run
+run
+run
+run
+run
+run
+run
+run
+# pass : ? + ? = 0x1e != ^
+# pass : ? + ? = 0x1e != leds 11110
+run
+run
+# ** Note: $finish    : D:/PhotonUser/My Files/Home Folder/LAB2/tb_sft.v(217)
+#    Time: 6440 ps  Iteration: 1  Instance: /top_sft/tb_sft
+# End time: 11:59:54 on May 01,2019, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0

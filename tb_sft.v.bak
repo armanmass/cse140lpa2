@@ -32,7 +32,7 @@
 
 // if CHECKER is defined, then run self checking code
 // if CHECKER is not defined, display the LED patterns
-`define CHECKER
+// `define CHECKER
 
 module tb_sft(
 	      output reg   tb_sim_rst,
@@ -206,14 +206,7 @@ module tb_sft(
       waitN(4);
       doOper("2", "3", "-");
       waitN(4);
-		doOper("9", "7", "+");
-      waitN(4);
-		doOper("9", "9", "+");
-      waitN(4);
-		doOper("9", "9", "-");
-      waitN(4);
-		doOper("?", "?", "+");
-      waitN(4);
+
       $finish;
 
    end

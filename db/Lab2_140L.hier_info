@@ -2,47 +2,60 @@
 Gl_rst => Gl_rst.IN1
 clk => clk.IN1
 Gl_adder_start => Gl_adder_start.IN1
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_subtract => num2.OUTPUTSELECT
-Gl_r1[0] => num1[0].DATAIN
-Gl_r1[1] => num1[1].DATAIN
-Gl_r1[2] => num1[2].DATAIN
-Gl_r1[3] => num1[3].DATAIN
-Gl_r1[4] => num1[4].DATAIN
-Gl_r1[5] => num1[5].DATAIN
-Gl_r1[6] => num1[6].DATAIN
-Gl_r1[7] => num1[7].DATAIN
+Gl_subtract => Gl_subtract.IN1
+Gl_r1[0] => Gl_r1[0].IN1
+Gl_r1[1] => Gl_r1[1].IN1
+Gl_r1[2] => Gl_r1[2].IN1
+Gl_r1[3] => Gl_r1[3].IN1
+Gl_r1[4] => LessThan0.IN4
+Gl_r1[4] => LessThan1.IN4
+Gl_r1[5] => LessThan0.IN3
+Gl_r1[5] => LessThan1.IN3
+Gl_r1[6] => LessThan0.IN2
+Gl_r1[6] => LessThan1.IN2
+Gl_r1[7] => LessThan0.IN1
+Gl_r1[7] => LessThan1.IN1
 Gl_r2[0] => num2.DATAA
+Gl_r2[0] => LessThan0.IN16
+Gl_r2[0] => LessThan1.IN16
+Gl_r2[0] => num2.DATAB
 Gl_r2[1] => num2.DATAA
+Gl_r2[1] => LessThan0.IN15
+Gl_r2[1] => LessThan1.IN15
+Gl_r2[1] => num2.DATAB
 Gl_r2[2] => num2.DATAA
+Gl_r2[2] => LessThan0.IN14
+Gl_r2[2] => LessThan1.IN14
+Gl_r2[2] => num2.DATAB
 Gl_r2[3] => num2.DATAA
-Gl_r2[4] => num2.DATAA
-Gl_r2[5] => num2.DATAA
-Gl_r2[6] => num2.DATAA
-Gl_r2[7] => num2.DATAA
-L2_adder_data[0] <= fb_adder:fb_adder1.ans
-L2_adder_data[1] <= fb_adder:fb_adder1.ans
-L2_adder_data[2] <= fb_adder:fb_adder1.ans
-L2_adder_data[3] <= fb_adder:fb_adder1.ans
-L2_adder_data[4] <= <GND>
-L2_adder_data[5] <= fb_adder:fb_adder1.ans
-L2_adder_data[6] <= fb_adder:fb_adder1.ans
+Gl_r2[3] => LessThan0.IN13
+Gl_r2[3] => LessThan1.IN13
+Gl_r2[3] => num2.DATAB
+Gl_r2[4] => LessThan0.IN12
+Gl_r2[4] => LessThan1.IN12
+Gl_r2[5] => LessThan0.IN11
+Gl_r2[5] => LessThan1.IN11
+Gl_r2[6] => LessThan0.IN10
+Gl_r2[6] => LessThan1.IN10
+Gl_r2[7] => LessThan0.IN9
+Gl_r2[7] => LessThan1.IN9
+L2_adder_data[0] <= fu_adder:fu_adder1.sum
+L2_adder_data[1] <= fu_adder:fu_adder2.sum
+L2_adder_data[2] <= fu_adder:fu_adder3.sum
+L2_adder_data[3] <= fu_adder:fu_adder4.sum
+L2_adder_data[4] <= <VCC>
+L2_adder_data[5] <= L2_led.DB_MAX_OUTPUT_PORT_TYPE
+L2_adder_data[6] <= L2_led.DB_MAX_OUTPUT_PORT_TYPE
 L2_adder_data[7] <= <GND>
 L2_adder_rdy <= sigDelay:sigDelay.sigOut
-L2_led[0] <= fb_adder:fb_adder1.ans
-L2_led[1] <= fb_adder:fb_adder1.ans
-L2_led[2] <= fb_adder:fb_adder1.ans
-L2_led[3] <= fb_adder:fb_adder1.ans
-L2_led[4] <= fb_adder:fb_adder1.ans
-L2_led[5] <= fb_adder:fb_adder1.ans
-L2_led[6] <= fb_adder:fb_adder1.ans
-L2_led[7] <= fb_adder:fb_adder1.ans
+L2_led[0] <= fu_adder:fu_adder1.sum
+L2_led[1] <= fu_adder:fu_adder2.sum
+L2_led[2] <= fu_adder:fu_adder3.sum
+L2_led[3] <= fu_adder:fu_adder4.sum
+L2_led[4] <= L2_led.DB_MAX_OUTPUT_PORT_TYPE
+L2_led[5] <= <GND>
+L2_led[6] <= <GND>
+L2_led[7] <= <GND>
 
 
 |Lab2_140L|sigDelay:sigDelay
@@ -60,89 +73,57 @@ rst => delayReg.OUTPUTSELECT
 rst => delayReg.OUTPUTSELECT
 
 
-|Lab2_140L|fb_adder:fb_adder1
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => ~NO_FANOUT~
-a[5] => ~NO_FANOUT~
-a[6] => ~NO_FANOUT~
-a[7] => ~NO_FANOUT~
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => ~NO_FANOUT~
-b[5] => ~NO_FANOUT~
-b[6] => ~NO_FANOUT~
-b[7] => ~NO_FANOUT~
-cin => cin.IN1
-cout[0] => ~NO_FANOUT~
-cout[1] => ~NO_FANOUT~
-cout[2] => ~NO_FANOUT~
-cout[3] => ~NO_FANOUT~
-cout[4] => ~NO_FANOUT~
-cout[5] => ~NO_FANOUT~
-cout[6] => ~NO_FANOUT~
-cout[7] => ~NO_FANOUT~
-sum[0] <= fu_adder:fu_adder1.sum
-sum[1] <= fu_adder:fu_adder2.sum
-sum[2] <= fu_adder:fu_adder3.sum
-sum[3] <= fu_adder:fu_adder4.sum
-sum[4] <= <GND>
-sum[5] <= <GND>
-sum[6] <= <GND>
-sum[7] <= <GND>
-ans[0] <= fu_adder:fu_adder1.sum
-ans[1] <= fu_adder:fu_adder2.sum
-ans[2] <= fu_adder:fu_adder3.sum
-ans[3] <= fu_adder:fu_adder4.sum
-ans[4] <= fu_adder:fu_adder4.cout
-ans[5] <= <GND>
-ans[6] <= <GND>
-ans[7] <= <GND>
-
-
-|Lab2_140L|fb_adder:fb_adder1|fu_adder:fu_adder1
+|Lab2_140L|fu_adder:fu_adder1
 a => sum.IN0
+a => cout.IN0
 a => cout.IN0
 b => sum.IN1
 b => cout.IN1
+b => cout.IN0
 cin => sum.IN1
+cin => cout.IN1
 cin => cout.IN1
 sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab2_140L|fb_adder:fb_adder1|fu_adder:fu_adder2
+|Lab2_140L|fu_adder:fu_adder2
 a => sum.IN0
+a => cout.IN0
 a => cout.IN0
 b => sum.IN1
 b => cout.IN1
+b => cout.IN0
 cin => sum.IN1
+cin => cout.IN1
 cin => cout.IN1
 sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab2_140L|fb_adder:fb_adder1|fu_adder:fu_adder3
+|Lab2_140L|fu_adder:fu_adder3
 a => sum.IN0
+a => cout.IN0
 a => cout.IN0
 b => sum.IN1
 b => cout.IN1
+b => cout.IN0
 cin => sum.IN1
+cin => cout.IN1
 cin => cout.IN1
 sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab2_140L|fb_adder:fb_adder1|fu_adder:fu_adder4
+|Lab2_140L|fu_adder:fu_adder4
 a => sum.IN0
+a => cout.IN0
 a => cout.IN0
 b => sum.IN1
 b => cout.IN1
+b => cout.IN0
 cin => sum.IN1
+cin => cout.IN1
 cin => cout.IN1
 sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
